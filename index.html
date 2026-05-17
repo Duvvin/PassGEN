@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassGEN</title>
+    <link rel="stylesheet" href="./src/style.css" type="text/css">
+</head>
+<body>
+    <section class="container">
+        <div id="titulo">
+            <h1>Pass<span>GEN</span></h1>
+        </div>
+        <div id="passCampo">
+            <output id="passOut"></output>
+        </div>
+        <div id="alert" class="alert"></div>
+        <form action="">
+            <label for="length">Tamanho da Senha</label>
+            <input type="number" value="8" max="12" min="4" name="length" id="length">
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="uppercase" id="uppercase">
+                <label for="uppercase">Letras Maiúsculas</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="lowercase" id="lowercase">
+                <label for="lowercase">Letras Minúsculas</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="symbols" id="symbols">
+                <label for="symbols">Adicionar Símbolos</label>
+            </div>
+
+            <button type="submit" class="btnGen">Gerar</button>
+            <button type="button" class="btnClip">Copiar</button>
+        </form>
+    </section>
+
+    <script src="./src/app.js"></script>
+</body>
+</html>
